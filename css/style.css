@@ -1,0 +1,447 @@
+.about_us, .services {
+  width: 75%;
+  margin: 0 auto; }
+
+.about_us .header_title, .services .header_title, .unique-design .bg .header_title, .service .header_title, .team .header_title, .work .header_title, .clients .header_title, .blog .header_title {
+  text-align: center; }
+  .about_us .header_title h2, .services .header_title h2, .unique-design .bg .header_title h2, .service .header_title h2, .team .header_title h2, .work .header_title h2, .clients .header_title h2, .blog .header_title h2 {
+    font-family: "Montserrat-Bold";
+    font-size: 3rem;
+    color: black; }
+    .about_us .header_title h2 p, .services .header_title h2 p, .unique-design .bg .header_title h2 p, .service .header_title h2 p, .team .header_title h2 p, .work .header_title h2 p, .clients .header_title h2 p, .blog .header_title h2 p {
+      font-family: "Kaushan Script";
+      font-size: 2rem;
+      color: black;
+      margin-bottom: 2rem; }
+  .about_us .header_title hr, .services .header_title hr, .unique-design .bg .header_title hr, .service .header_title hr, .team .header_title hr, .work .header_title hr, .clients .header_title hr, .blog .header_title hr {
+    width: 6%;
+    height: 0.2rem;
+    background-color: #f38181; }
+
+.about_us .image, .team .image {
+  position: relative; }
+  .about_us .image .gradient-overlay, .team .image .gradient-overlay {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(top, rgba(243, 129, 129, 0.8) 0%, rgba(252, 227, 138, 0.8) 100%);
+    display: none; }
+  .about_us .image:hover, .team .image:hover {
+    transform: translate(-10px, -10px); }
+    .about_us .image:hover img, .team .image:hover img {
+      box-shadow: 10px 10px 0px 0px #95e1d3; }
+    .about_us .image:hover .gradient-overlay, .team .image:hover .gradient-overlay {
+      display: block; }
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto-Regular.ttf"); }
+
+@font-face {
+  font-family: "Roboto-Light-Italic";
+  src: url("../fonts/Roboto-LightItalic.ttf"); }
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold.otf"); }
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat-Regular.otf"); }
+
+@font-face {
+  font-family: "Kaushan Script";
+  src: url("../fonts/KaushanScript-Regular.otf"); }
+
+.logo {
+  font-family: "Montserrat-Bold";
+  font-size: 2rem;
+  color: #fff; }
+
+.nav {
+  font-family: "Montserrat-Regular";
+  font-size: 1.5rem;
+  color: #fff; }
+
+.txt-title-white {
+  font-family: "Kaushan Script";
+  font-size: 6rem;
+  color: #fff; }
+
+.main-title {
+  font-family: "Montserrat-Bold";
+  font-size: 12rem;
+  color: #fff; }
+
+html {
+  font-size: 10px; }
+
+/** home **/
+.home nav {
+  background-image: url(../imgs/home.png);
+  color: #fff; }
+
+.home .text {
+  background-image: url(../imgs/home.png);
+  padding: 15rem 0;
+  color: #fff; }
+  .home .text .col-md-8 {
+    margin: 0 auto; }
+    .home .text .col-md-8 h1::after {
+      content: " ";
+      display: block;
+      margin: 5rem auto;
+      height: 0.3rem;
+      background-color: #fff;
+      width: 6rem; }
+    .home .text .col-md-8 .btn-outline-primary {
+      font-family: "Montserrat-Bold";
+      font-size: 1.2rem;
+      color: #fff;
+      background-color: transparent;
+      border-color: #fff;
+      padding: 1rem 3rem; }
+
+@media only screen and (max-width: 1024px) {
+  .home .text h1 {
+    font-size: 5rem; }
+  .home .text p {
+    font-size: 3rem; } }
+
+/** about us **/
+.about_us {
+  padding: 8rem 0; }
+  @media only screen and (max-width: 1024px) {
+    .about_us .image {
+      margin-bottom: 20px; }
+    .about_us img {
+      width: 100%; } }
+  .about_us .header_title h6 {
+    font-family: "Roboto-Regular";
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 5rem; }
+  .about_us .image .overlay-text {
+    position: absolute;
+    top: 44%;
+    left: 34%; }
+    .about_us .image .overlay-text i {
+      color: #fff;
+      font-size: 20px; }
+    .about_us .image .overlay-text p {
+      font-family: "Montserrat-Bold";
+      font-size: 1.8rem;
+      color: #fff; }
+
+.back_ground {
+  background-color: #95e1d3;
+  color: #fff; }
+  .back_ground .column {
+    border-right: 1px solid white;
+    text-align: center; }
+    .back_ground .column:first-child {
+      border-left: 1px solid white; }
+    .back_ground .column h4 {
+      font-family: "Montserrat-Bold";
+      font-size: 4rem;
+      color: #fff; }
+    .back_ground .column h5 {
+      font-family: "Montserrat-Regular";
+      font-size: 1.5rem;
+      color: #fff;
+      text-transform: uppercase; }
+    @media only screen and (max-width: 1024px) {
+      .back_ground .column {
+        border: none; }
+        .back_ground .column:first-child {
+          border-left: none; } }
+  @media screen and (min-width: 1200px) {
+    .back_ground .column {
+      flex: 0 0 20%;
+      max-width: 20%; } }
+
+.services {
+  padding: 8rem 0; }
+  .services h3 {
+    text-transform: uppercase;
+    font-family: "Montserrat-Regular";
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 1rem; }
+  .services p {
+    font-family: "Roboto-Regular";
+    font-size: 1.3rem;
+    color: black; }
+  .services h4::before {
+    content: " ";
+    display: inline-block;
+    height: 0.3rem;
+    width: 10%;
+    background-color: #f38181; }
+
+.unique-design .bg {
+  background-image: url(../imgs/BG.png);
+  background-attachment: fixed; }
+  .unique-design .bg .tab {
+    position: relative; }
+    .unique-design .bg .tab .mobile {
+      position: absolute;
+      top: 20.6rem;
+      right: 27.7rem; }
+  @media only screen and (max-width: 1024px) {
+    .unique-design .bg .mobile img {
+      display: none; } }
+
+.service {
+  padding: 8rem 0; }
+  .service .header_title h6 {
+    font-family: "Roboto-Regular";
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 5rem; }
+  .service .media .card-header {
+    background-color: transparent; }
+    .service .media .card-header button {
+      font-family: "Montserrat-Regular";
+      font-size: 1.3rem;
+      color: #fff; }
+  .service .media .card-body {
+    font-family: "Roboto-Light-Italic";
+    font-size: 1.4rem;
+    color: #fff; }
+
+.quotes {
+  background-color: #f8f8f8;
+  padding: 5rem 0;
+  padding-left: 17rem; }
+  .quotes img {
+    padding: 2rem;
+    border: 0.2rem solid #95e1d3; }
+  .quotes blockquote {
+    font-family: "Roboto-Light-Italic";
+    font-size: 2rem;
+    color: black;
+    width: 60%; }
+    .quotes blockquote h4 {
+      font-family: "Kaushan Script";
+      font-size: 2rem;
+      color: black; }
+      .quotes blockquote h4::before {
+        content: " ";
+        display: inline-block;
+        margin: 0 0.4rem 0.6rem 0;
+        height: 0.3rem;
+        background-color: #f38181;
+        width: 7%; }
+  .quotes .carousel-control-prev-icon {
+    background-image: url(../imgs/ARROW%20_%20DOWN%20copy%202.png);
+    background-size: contain; }
+  .quotes .carousel-control-next-icon {
+    background-image: url(../imgs/ARROW%20_%20DOWN%20copy.png);
+    background-size: contain; }
+  @media only screen and (max-width: 1024px) {
+    .quotes {
+      padding-left: 3rem; }
+      .quotes .media blockquote {
+        width: 100%; }
+      .quotes .carousel-control-prev-icon, .quotes .carousel-control-next-icon {
+        display: none; } }
+
+.team {
+  padding: 8rem 0; }
+  @media only screen and (max-width: 1024px) {
+    .team .image {
+      margin-bottom: 20px; }
+    .team img {
+      width: 100%; } }
+  .team .image .overlay-text {
+    position: absolute;
+    top: 43%;
+    left: 22%; }
+    .team .image .overlay-text i {
+      border: 1px solid #fce38a;
+      background-color: #fce38a;
+      padding: 1rem;
+      color: #f38181;
+      font-size: 20px; }
+      .team .image .overlay-text i:hover {
+        background-color: #f38181;
+        color: #fce38a; }
+  .team h6 {
+    font-family: "Roboto-Regular";
+    font-size: 1.5rem;
+    color: black;
+    width: 80%;
+    margin: 5rem auto; }
+
+.logos {
+  background-color: #f8f8f8; }
+
+.work {
+  padding-top: 8rem; }
+  .work .header_title h6 {
+    font-family: "Roboto-Regular";
+    font-size: 1.5rem;
+    color: black;
+    width: 70%;
+    margin: 5rem auto; }
+
+#quote1 {
+  background-color: #fff; }
+  #quote1 img {
+    border: none; }
+
+.clients {
+  padding: 8rem 0;
+  background-image: url(../imgs/clients.png);
+  background-attachment: fixed; }
+  .clients .container h4 {
+    font-family: "Montserrat-Regular";
+    font-size: 1.4rem;
+    color: black; }
+  .clients .container h6 {
+    font-family: "Roboto-Light-Italic";
+    font-size: 1.4rem;
+    color: #707070; }
+    .clients .container h6::after {
+      content: " ";
+      display: block;
+      margin: 1.8rem 0 2.5rem;
+      height: 0.3rem;
+      width: 10%;
+      background-color: #f38181; }
+  .clients .container p {
+    font-family: "Roboto-Regular";
+    font-size: 1.4rem;
+    color: #707070; }
+
+.blog {
+  padding: 8rem 0; }
+  .blog .card {
+    border: none; }
+    .blog .card .parent {
+      position: relative; }
+      .blog .card .parent .date {
+        position: absolute;
+        bottom: 9px;
+        left: -15px;
+        color: white;
+        font-size: 20px;
+        background-color: #95e1d3;
+        border: 1px solid #95e1d3;
+        line-height: 1; }
+        .blog .card .parent .date .day {
+          font-family: "Montserrat-Bold";
+          font-size: 2.5rem;
+          color: #fff; }
+        .blog .card .parent .date .month {
+          font-family: "Roboto-Light-Italic";
+          font-size: 1.5rem;
+          color: #fff;
+          margin-top: 0; }
+    .blog .card .card-body {
+      padding-bottom: 0; }
+      .blog .card .card-body h3 {
+        font-family: "Montserrat-Regular";
+        font-size: 1.4rem;
+        color: black; }
+      .blog .card .card-body p {
+        font-family: "Roboto-Regular";
+        font-size: 1.4rem;
+        color: black; }
+    .blog .card .card-footer {
+      padding-top: 0;
+      border-top: none;
+      background-color: transparent; }
+      .blog .card .card-footer i {
+        font-size: 1.4rem;
+        color: #95e1d3; }
+      .blog .card .card-footer span {
+        font-family: "Roboto-Light-Italic";
+        font-size: 1.4rem;
+        color: black; }
+
+.footer {
+  background-color: #f8f8f8;
+  padding: 8rem 0; }
+  .footer .mogo h3 {
+    font-family: "Montserrat-Bold";
+    font-size: 3rem;
+    color: #cccccc;
+    margin-bottom: 2rem; }
+  .footer .mogo p {
+    font-family: "Roboto-Regular";
+    font-size: 1.5rem;
+    color: #cccccc;
+    margin-bottom: 2rem; }
+  .footer .mogo .followers {
+    font-family: "Montserrat-Regular";
+    font-size: 1.4rem;
+    color: #999999; }
+    .footer .mogo .followers span {
+      font-family: "Montserrat-Bold";
+      font-size: 1.7rem;
+      color: black; }
+  .footer .mogo .social-media span {
+    font-family: "Roboto-Light-Italic";
+    font-size: 1.5rem;
+    color: #cccccc; }
+  .footer .mogo .social-media i {
+    color: #95e1d3;
+    font-size: 1.5rem; }
+  .footer .form label {
+    font-family: "Roboto-Regular";
+    font-size: 1.2rem;
+    color: #cccccc; }
+  .footer .form .form-control, .footer .form .form-text {
+    height: 3rem;
+    font-family: "Roboto-Regular";
+    font-size: 1rem;
+    color: #cccccc; }
+  .footer .form button[type=submit] {
+    padding: 0.5rem 2rem;
+    background-color: #95e1d3;
+    border-color: #95e1d3; }
+  .footer .insta h3 {
+    font-family: "Montserrat-Regular";
+    font-size: 1.4rem;
+    color: black; }
+  .footer .insta .instagram {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0.2rem;
+    row-gap: 0.2rem;
+    margin-bottom: 1.5rem; }
+    .footer .insta .instagram .insta1 {
+      background-image: url("../imgs/insta1.png"); }
+    .footer .insta .instagram .insta2 {
+      background-image: url("../imgs/insta2.png"); }
+    .footer .insta .instagram .insta3 {
+      background-image: url("../imgs/insta3.png"); }
+    .footer .insta .instagram .insta4 {
+      background-image: url("../imgs/insta4.png"); }
+    .footer .insta .instagram .insta5 {
+      background-image: url("../imgs/insta5.png"); }
+    .footer .insta .instagram .insta6 {
+      background-image: url("../imgs/insta6.png"); }
+    .footer .insta .instagram .insta7 {
+      background-image: url("../imgs/insta7.png"); }
+    .footer .insta .instagram .insta8 {
+      background-image: url("../imgs/insta8.png"); }
+    .footer .insta .instagram .insta9 {
+      background-image: url("../imgs/insta9.png"); }
+    .footer .insta .instagram .instaImg {
+      width: 8rem;
+      height: 8rem; }
+  .footer .insta h5 {
+    font-family: "Roboto-Light-Italic";
+    font-size: 1.3rem;
+    color: black; }
+  .footer .copy-right {
+    font-family: "Montserrat-Regular";
+    font-size: 1.5rem;
+    color: black; }
+    .footer .copy-right span {
+      color: #f4a4a4; }

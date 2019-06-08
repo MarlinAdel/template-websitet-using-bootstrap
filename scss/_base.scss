@@ -1,0 +1,457 @@
+@include fontFace($RobotoRegular, "../fonts/Roboto-Regular.ttf");
+@include fontFace($RobotoLightItalic, "../fonts/Roboto-LightItalic.ttf");
+@include fontFace($MontserratBold, "../fonts/Montserrat-Bold.otf");
+@include fontFace($MontserratRegular, "../fonts/Montserrat-Regular.otf");
+@include fontFace($KaushanScriptRegular, "../fonts/KaushanScript-Regular.otf");
+.logo {
+    @include text($MontserratBold, 2rem, $whiteColor);
+}
+.nav{
+    @include text($MontserratRegular, 1.5rem, $whiteColor);
+}
+.txt-title-white{
+    @include text($KaushanScriptRegular, 6rem, $whiteColor);
+}
+.main-title{
+    @include text($MontserratBold, 12rem, $whiteColor);
+}
+html{
+    font-size: $main_fontSize;
+}
+/** home **/
+.home{
+    nav{
+        background-image: $homeBG;
+        color: $whiteColor; 
+    }
+    .text{
+        background-image: url(../imgs/home.png);
+         padding: 15rem 0;
+        color: $whiteColor;
+        .col-md-8{
+            margin: $auto;
+            h1{
+                &::after{
+                    content: " ";
+                    display: block;
+                    margin: 5rem auto;
+                    height: 0.3rem;
+                    background-color: $whiteColor;
+                    width: 6rem;
+                }
+            }
+            .btn-outline-primary{
+                @include text($MontserratBold, $fontSize, $whiteColor);
+                background-color: transparent;
+                border-color: $whiteColor;
+                padding: 1rem 3rem;
+            }
+           }
+    }
+    @media only screen and (max-width: 1024px){
+        .text{
+            h1{ 
+                font-size: 5rem;
+            }
+            p{
+                font-size: 3rem;
+			}
+        }
+    }
+}
+ /** about us **/  
+.about_us{
+    @media only screen and (max-width: 1024px){
+        .image {
+            margin-bottom: 20px;
+        }
+        img {
+            width: 100%;
+        }
+    }
+   @extend %container;
+   padding: $mainPadding;
+    .header_title{
+        @extend %header_title;
+    h6{
+        @include text($RobotoRegular, 1.4rem, $whiteColor);
+        margin-bottom: 5rem;
+    }
+    }
+    .image {
+        @extend %overlay;
+        .overlay-text {
+            position: absolute;
+            top: 44%;
+            left: 34%;
+            i {
+                color: $whiteColor;
+                font-size: 20px;
+            }
+            p {
+                @include text($MontserratBold,1.8rem,$whiteColor);
+            }
+        }
+    }
+}
+
+.back_ground{
+    background-color: $bgColor;
+    color: $whiteColor;
+    .column{ 
+        border-right:1px solid white;
+        text-align: $center;
+    &:first-child{
+            border-left: 1px solid white;
+            }
+        
+        h4{
+            @include text($MontserratBold, 4rem, $whiteColor);
+         }
+        h5{
+            @include text($MontserratRegular, 1.5rem, $whiteColor);
+            text-transform: uppercase;
+            }
+  
+        @media only screen and (max-width: 1024px) {
+			border: none; 
+            &:first-child {
+                border-left: none;
+            }
+        }
+  }
+     @media screen and (min-width: 1200px){
+            .column {
+                 flex: 0 0 20%;
+                 max-width: 20%;
+            }
+        }
+       
+    }   
+.services{
+//    @media only screen and (max-width: 1024px){
+//        .media{
+//            text-align: center;
+//            }
+//    }
+    padding: $mainPadding;
+    @extend %container;
+    .header_title{
+        @extend %header_title;
+    }
+    h3{
+        text-transform: uppercase;
+         @include text($MontserratRegular, 1.5rem, black);
+        margin-bottom: 1rem;
+    }
+    p{
+        @include text($RobotoRegular, 1.3rem, black); 
+    }
+    h4{
+        &::before{
+            content: " ";
+            display: inline-block;
+//            margin:1.8rem 0 2.5rem;
+            height: 0.3rem;
+            width: 10%;
+            background-color: $lineColor;
+        }
+    }
+}
+.unique-design{
+    .bg{
+        background-image: $BG;
+        background-attachment: fixed;
+        .header_title{
+        @extend %header_title;
+        }
+        .tab{
+            position: relative;
+            .mobile{
+                position: absolute;
+                top: 20.6rem;
+                right: 27.7rem;
+            }
+        }
+        @media only screen and (max-width: 1024px){
+            .mobile{
+                img{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.service{
+     padding: $mainPadding;
+    .header_title{
+        @extend %header_title;
+        h6{ 
+            @include text($RobotoRegular, 1.4rem, $whiteColor);
+            margin-bottom: 5rem;
+         }
+    }
+    .media{
+        .card-header{
+            background-color: transparent;
+            button{
+                @include text($MontserratRegular, 1.3rem, $whiteColor); 
+            }
+        }
+        .card-body{
+           @include text($RobotoLightItalic, 1.4rem, $whiteColor); 
+        }
+    }
+    
+}
+.quotes{
+	background-color: $bgGray;
+    padding: 5rem 0;
+    padding-left: 17rem;
+    .media{
+//         @extend %arrows;
+    }
+    img{
+        padding: 2rem;
+        border: 0.2rem solid #95e1d3;
+        }
+    blockquote{
+         @include text($RobotoLightItalic, 2rem, black); 
+         width: 60%;
+        h4{
+          @include text($KaushanScriptRegular,2rem, black); 
+            &::before{
+                content: " ";
+                display: inline-block;
+                margin: 0 0.4rem 0.6rem 0;
+                height: 0.3rem;
+                background-color: #f38181;
+                width: 7%;
+            }
+        }
+        }
+    .carousel-control-prev-icon {
+            background-image: url(../imgs/ARROW%20_%20DOWN%20copy%202.png);
+            background-size: contain;
+        }
+    .carousel-control-next-icon {
+        background-image: url(../imgs/ARROW%20_%20DOWN%20copy.png);
+        background-size: contain;
+    }
+    @media only screen and (max-width: 1024px){
+            padding-left: 3rem;
+             .media {
+                 blockquote{
+               width: 100%;
+           }
+         }
+        .carousel-control-prev-icon , .carousel-control-next-icon{
+            display: none;
+        } 
+        }
+}
+.team{
+     @media only screen and (max-width: 1024px){
+        .image {
+            margin-bottom: 20px;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    padding: $mainPadding;
+	.header_title{
+        @extend %header_title;
+    }
+    .image{
+                @extend %overlay;
+                    .overlay-text {
+                        position: absolute;
+                        top: 43%;
+                        left: 22%;
+            i {
+                border: 1px solid #fce38a;
+                background-color: #fce38a;
+                padding: 1rem;
+                color: #f38181;
+                font-size: 20px;
+                &:hover{
+                    background-color: #f38181;
+                    color: #fce38a;
+                }
+            }
+        }
+    }
+     h6{
+             @include text($RobotoRegular, 1.5rem, black);
+            width: 80%;
+            margin: 5rem auto;
+        }
+}
+.logos{
+    background-color: $bgGray;
+}
+.work{
+    padding-top: 8rem;
+	.header_title{
+        @extend %header_title;
+        h6{
+             @include text($RobotoRegular, 1.5rem, black);
+            width: 70%;
+            margin: 5rem auto;
+        }
+        }
+}
+#quote1{
+    background-color: $whiteColor;
+    img{
+       border: none; 
+    }
+}
+.clients{
+    padding: $mainPadding;
+    background-image: $clientsBG;
+    background-attachment: fixed;
+    .header_title{
+        @extend %header_title;
+    }
+    .container{
+        h4{
+        @include text($MontserratRegular, 1.4rem, black);
+    }
+    h6{
+        @include text($RobotoLightItalic, 1.4rem, #707070);
+        &::after{
+            content: " ";
+            display: block;
+            margin:1.8rem 0 2.5rem;
+            height: 0.3rem;
+            width: 10%;
+            background-color: $lineColor;
+        } 
+    }
+    p{
+        @include text($RobotoRegular, 1.4rem, #707070);    }
+    }
+}
+.blog{
+    padding: $mainPadding;
+    .header_title{
+        @extend %header_title;
+    }
+    .card{
+        border: none;
+        .parent{
+            position: relative;
+            .date{
+                position: absolute;
+                bottom: 9px;
+                left: -15px;
+                color: white;
+                font-size: 20px;
+                background-color: #95e1d3;
+                border: 1px solid #95e1d3;
+                line-height: 1;
+                .day{
+                    @include text($MontserratBold, 2.5rem, $whiteColor);
+                }
+                .month{
+                    @include text($RobotoLightItalic, 1.5rem, $whiteColor);
+                    margin-top: 0;
+                }
+            }
+        }
+        .card-body{
+            padding-bottom: 0;
+            h3{
+                @include text($MontserratRegular, 1.4rem, black);
+            }
+            p{
+               @include text($RobotoRegular, 1.4rem, black); 
+            }
+        }
+        .card-footer{
+            padding-top: 0;
+            border-top: none;
+            background-color: transparent;
+            i{
+                font-size: 1.4rem;
+                color: #95e1d3;
+            }
+            span{
+              @include text($RobotoLightItalic, 1.4rem, black);  
+            }
+        }
+    }
+    
+}
+.footer{
+    background-color: $bgGray;
+    padding: $mainPadding;
+    .mogo{
+        h3{
+          @include text($MontserratBold, 3rem, #cccccc);  margin-bottom: 2rem; 
+        }
+        p{
+           @include text($RobotoRegular, 1.5rem, #cccccc); 
+            margin-bottom: 2rem; 
+        }
+        .followers{
+            @include text($MontserratRegular, 1.4rem, #999999);
+            span{
+                @include text($MontserratBold, 1.7rem, black);
+            }
+        }
+        .social-media{
+            span{
+               @include text($RobotoLightItalic, 1.5rem, #cccccc);  
+            }
+            i {
+			color: #95e1d3;
+			font-size: 1.5rem;
+		}
+        }
+    }
+    .form{
+        label{
+            @include text($RobotoRegular, $fontSize, #cccccc);  
+        }
+        .form-control , .form-text{
+            height: 3rem;
+            @include text($RobotoRegular,1rem, #cccccc);
+        }
+        button[type=submit]{
+            padding: 0.5rem 2rem;
+            background-color: #95e1d3;
+            border-color: #95e1d3;
+        }
+    }
+    .insta{
+         h3{
+        @include text($MontserratRegular, 1.4rem, black);
+    }
+        .instagram{
+            @include instgram();
+            display: grid;
+		    grid-template-columns: 1fr 1fr 1fr;
+		    column-gap: 0.2rem;
+		    row-gap: 0.2rem;
+            margin-bottom: 1.5rem;
+		.instaImg {
+			width: 8rem;
+			height: 8rem;
+		}
+        }
+        h5{
+        @include text($RobotoLightItalic, 1.3rem, black);
+    }
+		
+	}
+    .copy-right{
+        @include text($MontserratRegular, 1.5rem, black);
+        span{
+            color: #f4a4a4;
+        }
+    }
+}
+
